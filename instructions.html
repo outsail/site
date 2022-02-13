@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="copyright" content="MACode ID, https://macodeid.com/">
+
+  <title>OutSail Webstore</title>
+
+  <link rel="stylesheet" href="./index_files/bootstrap.css">
+  
+  <link rel="stylesheet" href="./index_files/maicons.css">
+
+  <link rel="stylesheet" href="./index_files/animate.css">
+
+  <link rel="stylesheet" href="./index_files/owl.carousel.css">
+
+  <link rel="stylesheet" href="./index_files/jquery.fancybox.css">
+
+  <link rel="stylesheet" href="./index_files/theme.css">
+  
+  <style>
+	img {max-width:100%;height:auto;}
+  </style>
+
+</head>
+<body>
+
+  <!-- Back to top button -->
+  <div class="back-to-top"></div>
+
+  <header>
+     <!-- .top-bar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a href="file:///C:/Users/Brian/Desktop/OutSail%20Webstore/html/index.html" class="navbar-brand">Outsail <span class="text-primary">Webstore.</span></a>
+
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarContent">
+          <ul class="navbar-nav ml-auto pt-3 pt-lg-0">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Store</a>
+            </li>
+            <li class="nav-item active">
+              <a href="instructions.html" class="nav-link">Instructions</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div> <!-- .container -->
+    </nav> <!-- .navbar -->
+
+     <!-- .page-banner -->
+  </header>
+
+  <body>
+  <br>
+  <hr>
+  <br>
+  <center>
+  <h1><strong>For any Questions, bug reports or for Support please contact using the contact form found on the contact page. </strong>
+  <br>
+  <hr>
+  <br>
+<h1><strong>Powering on the S-Link</strong></h1>
+<p><span style="font-weight: 400;">First things first you need to turn on your S-Link, The S-Link can accept power in one of two ways, if your using a Megasquirt chances are your ECU will provide the power needed through the Pin9 on the DB9 connector, if this is the case you simply plug in the S-Link to the db9 port, and it will turn on when you turn on the ECU.</span></p>
+<p><span style="font-weight: 400;">If This is not the case and your ECU does not supply power through this port, then you will need to supply 5V power through the MicroUSB port on the side of the S-Link, this can be in the form of either a car USB charger, or a battery pack if you prefer.</span></p>
+<p><span style="font-weight: 400;">On some ECUs it may be necessary to remove the serial cable mounting standoffs located on both sides of the DB9 port. You only need to do this if the S-Link does not seat all the way on the DB9 Port, you would know because the S-Link would feel very loose on the port and will rock back and forth easily.</span></p>
+<img src="images/instructions/db9port.png">
+<p><span style="font-weight: 400;">They simply unscrew and can be placed to the side.</span></p>
+<h1><strong>The LED Indicator</strong></h1>
+<p><span style="font-weight: 400;">This is a simple way to understand what is going on in the S-Link,</span></p>
+<p><span style="font-weight: 400;">The LED operation is very simple, when you first power up the S-link the LED will turn on, this indicates that it has power and is booting, when it is finished booting and the WiFi access point is available to connect to, the LED will turn off.</span></p>
+<p><span style="font-weight: 400;">When an application starts using the S-Link the LED will turn on to signal that a device is connected, and will turn off when the application is no longer talking through the S-Link and a different application can use it.</span></p>
+<h1><strong>Connecting to the S-Link</strong></h1>
+<p><span style="font-weight: 400;">First, naturally you will need to turn the S-Link on, either by turning on your car's ignition or connecting power to the microUSB port.</span></p>
+<p><span style="font-weight: 400;">On the device you wish to use with the serial link, open your WiFi page, and you will see the "Serial Link" network, this is the default network name for the S-Link. You can change this at a later time if you desire, along with the password.</span></p>
+<p><span style="font-weight: 400;">If you want/need to use a serial cable to extend the location of the S-Link, or want to connect it to an existing extension it must be a STRAIGHT THROUGH cable. There exists a serial cable that is called a crossover cable, if you use such a cable it will switch the RX and TX ports causing the S-Link to not transfer any data between the network and the ECU. You will know if this is the case, as the S-Link will be powered and you will be able to connect to it, but no application will be able to connect to it and transfer data.</span></p>
+<p><span style="font-weight: 400;">The default password to connect to the network is "seriallink"</span></p>
+<p><span style="font-weight: 400;">once connected, it should say "connected without internet" or something similar. This is as expected and means you cannot visit any webpage, other than the SerialLink configuration page.</span></p>
+<h1><strong>The S-Link configuration Page</strong></h1>
+<p><span style="font-weight: 400;">Lets take a quick moment to learn how to navigate the configuration page. By design the Configuration page is as simple as possible.</span></p>
+<img src="images/instructions/confpage.png">
+<p><span style="font-weight: 400;">The configuration page can only be accessed if there is no application currently communicating over the S-Link network. If a device is actively communicating with the ECU using the S-Link the page will not load. This is to prevent potential data loss as well as allow for a faster data exchange rate.</span></p>
+<p><span style="font-weight: 400;">To access the configuration page, you must first be connected to the S-Link. On the device connected to the S-Link you will want to open your web browser and navigate to the URL: "192.168.4.1". This page takes a few seconds after booting to become available, but you can refresh a few times and it will eventually load.</span></p>
+<p><span style="font-weight: 400;">In the configuration Page you have 5 modifiable values, These are Baud Rate, your network ssid, your network password, device SSID, and device password, along with the save button of course.</span></p>
+<p><span style="font-weight: 400;">Baud Rate The baud rate is the baud rate you need the S-Link to operate at, this number needs to match the detailed Baud Rate Determined by the ECU you are using. By default the S-Link is set with a baudrate of 115200, the default for Megasquirt 2 and 3.</span></p>
+<p><span style="font-weight: 400;">Your Network SSID and Password These fields exist to establish a connection between the S-Link and your existing home network. This exists to allow the Device you are tuning with to download any ECU definition files it needs from the internet to read and write data from the ECU, This is only needed for the first time the application is used with the ECU, or if you do not wish to enter your network information, you can manually download the definition files and place them where needed, but this is just easier.</span></p>
+<p><span style="font-weight: 400;">_NO SPECIAL CHARACTERS ARE ALLOWED TO BE ENTERED, IT WILL ONLY ACCEPT NUMBERS AND LETTERS. this is because the CPU in the S-Link does not like special characters and will get stuck in a boot loop if used. I may be able to change this in the future but as it stands now it is better to just avoid them completely. _</span></p>
+<p><span style="font-weight: 400;">The S-Link does NOT need to be connected to an existing network to operate as a WiFi serial adapter.</span></p>
+<p><em><span style="font-weight: 400;">Note: changing this setting requires a reboot to start working</span></em></p>
+<p><span style="font-weight: 400;">Serial Link Access Point Connection Settings These fields exist to allow you to customize the S-Link name and password that you would use to connect to it in your devices WiFi connections screen.</span></p>
+<p><em><span style="font-weight: 400;">NO SPECIAL CHARACTERS ARE ALLOWED TO BE ENTERED, Just like the fields above.</span></em></p>
+<p><em><span style="font-weight: 400;">Note: after changing this setting, you will be kicked off the network and will need to reboot the device to connect to it with the new SSID / Password</span></em></p>
+<p><span style="font-weight: 400;">The SAVE ALL button This is the save button, you MUST press this button for any changes to become active, Any baud rate changes will take effect as soon as you press the save button and will start communicating on the new bad rate from here out, any network changes will require a reboot of the S-Link to take effect.</span></p>
+<h1><strong>Using the S-Link with programs like MSDroid, TunerStudio, ShadowdashMS etc..</strong></h1>
+<p><span style="font-weight: 400;">Once the correct Baud rate is selected for the ecu you intend on using, you need to configure the wifi adapter settings in the application you want to use.</span></p>
+<p><span style="font-weight: 400;">NOTE: To use WiFi adapters with TunerStudio, you need to have the paid version, the free TunerStudio does not allow you to use a WiFi adapter. The S-Link should work with any application or software that allows for use of WiFi/TCP/IP to rs232 adapters. This includes but is not limited to MSDroid, ShadowDashMS, and TunerStudio. At this point all three of these have been tested and work with the S-Link.</span></p>
+<p><span style="font-weight: 400;">There are two pieces of information you need to enter into the app settings to allow the app to communicate through the Wifi Adapter.</span></p>
+<p><span style="font-weight: 400;">These are known as the IP and PORT and are configurable in the app settings page of the application.</span></p>
+<p><span style="font-weight: 400;">The IP of the S-Link is: 192.168.4.1 (The same IP as the configuration page) The PORT of the S-Link is: 23</span></p>
+<p><span style="font-weight: 400;">These values are not changeable and will always be the values above.</span></p>
+<p><span style="font-weight: 400;">NOTE: You can connect to the S-link with multiple devices at a time, but only one application can communicate with the S-Link at a time, you must disconnect the application before attempting connection with another, otherwise it will not communicate with it.</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h1><strong>Updating the S-Link</strong></h1>
+<p><span style="font-weight: 400;">The S-Link software has an updating system built in to allow you to update the device yourself if I ever release a fix or change.</span></p>
+<p><span style="font-weight: 400;">First things first, you will want to download the version of the firmware you want to install from the releases tab in this github repository.</span></p>
+<p><span style="font-weight: 400;">To update the S-Link with the new software version, connect to the S-link on the device that you have the new firmware downloaded on. Navigate to your web browser and enter the following URL: &ldquo;192.168.4.1/update&rdquo; this will take you to the firmware update screen, there is two options on this menu, update the Firmware or upload files to the Filesystem.</span></p>
+<p><span style="font-weight: 400;">For the S-Link there is no need to use the FileSystem option and you will only ever need to use the Firmware update. Under the Firmware section press the &ldquo;Choose File&rdquo; button and select the updated firmware that you downloaded, this file should end in the .bin extension. If you accidentally chose the wrong file, simply just hit the &ldquo;choose File&rdquo; button again until you select the right file, the filename should now be displayed next to the button. Once you have selected the correct file press the &ldquo;Update Firmware&rdquo; button and the S-Link will begin installing the new software update.</span></p>
+<p><span style="font-weight: 400;">NOTE: Do not turn off power to the S-Link while it is updating, this would cause it to be unusable and the software would need to be manually flashed to the CPU.</span></p>
+<p><span style="font-weight: 400;">Once the Upgrade is complete you are set to continue using the S-Link as needed.</span></p>
+<p>&nbsp;</p>
+</center>
+  </body>
+
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 py-3">
+          <h3>Out<span class="fg-primary">Sail.</span></h3>
+        </div>
+        
+        
+        
+      </div>
+
+      <hr>
+
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <p>Copyright 2020. This template designed by <a href="https://macodeid.com/">MACode ID</a></p>
+        </div>
+        
+      </div>
+    </div>
+  </footer>
+
+  
+<script src="./index_files/jquery-3.5.1.min.js.download"></script>
+
+<script src="./index_files/bootstrap.bundle.min.js.download"></script>
+
+<script src="./index_files/owl.carousel.min.js.download"></script>
+
+<script src="./index_files/wow.min.js.download"></script>
+
+<script src="./index_files/jquery.fancybox.min.js.download"></script>
+
+<script src="./index_files/isotope.pkgd.min.js.download"></script>
+
+<script src="./index_files/google-maps.js.download"></script>
+
+<script src="./index_files/theme.js.download"></script>
+
+<!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIA_zqjFMsJM_sxP9-6Pde5vVCTyJmUHM&callback=initMap"></script> -->
+
+
+</body></html>
