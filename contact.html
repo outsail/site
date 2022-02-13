@@ -98,7 +98,7 @@
   <br>
   <center>
 	<h1 id="feedback" ></h1>
-	<form name="contactForm" onsubmit="return sendMessage()">
+	<form id="contactForm" name="contactForm" onsubmit="return sendMessage()">
 		<h1>Your Info:<h1> <input required pattern="[a-zA-z0-9]+" name="name" id="name" placeholder="Name"></input><br>
 		<br>
 		<input type="email" required name="email" id="email" placeholder="Email"></input>
@@ -169,6 +169,9 @@
       }
 	  document.getElementById("feedback").innerHTML = "Your contact request has been sent! We will email you as soon as we can";
       request.send(JSON.stringify(params));
+	    var forms =
+                document.getElementById("contactForm");
+                gfg_down.parentNode.removeChild(forms);
 	  return false;
     }
   </script>
