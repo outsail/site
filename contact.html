@@ -23,7 +23,7 @@
    <style type="text/css">
 		#name {width:80%;}
 		#email {width:80%;}
-		#message {width:80%;}
+		#message {width:80%;height:300px;}
 		input[type=text], select {
 		  padding: 12px 20px;
 		  margin: 8px 0;
@@ -98,18 +98,7 @@
   <br>
   <center>
 	<h1 id="feedback" ></h1>
-	<form id="contactForm" name="contactForm" onsubmit="return sendMessage()">
-		<h1>Your Info:<h1> <input required pattern="[a-zA-z0-9]+" name="name" id="name" placeholder="Name"></input><br>
-		<br>
-		<input type="email" required name="email" id="email" placeholder="Email"></input>
-		<h1>Inquiry Type:<h1> <select name="inquiry" id="inquiry">
-			<option value = "general question">General Question</option>
-			<option value = "Technical Support">Technical Support</option>
-		</select><br><br>
-		<h1>Message:</h1><input name="message" pattern="[a-zA-z0-9 ,.?!]+" id="message" placeholder="Message"></input><br>
-		<br>
-		<input type="submit" value="Send Message">
-	</form>
+	<h3>Please email us at outsailcontact@gmail.com</h3>
 	<br><br>
 	</center>
   </body>
