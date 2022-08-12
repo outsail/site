@@ -73,24 +73,25 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="navbar-collapse collapse" id="navbarContent">
-          <ul class="navbar-nav ml-auto pt-3 pt-lg-0">
-            <li class="nav-item">
-              <a href="index.html" class="nav-link">Store</a>
-            </li>
-            <li class="nav-item">
-              <a href="instructions.html" class="nav-link">Instructions</a>
-            </li>
-            <li class="nav-item active">
-              <a href="contact.html" class="nav-link">Contact</a>
-            </li>
-	<li class="nav-item">
-              <a href="reviews.html" class="nav-link">Reviews</a>
-            </li>
-          </ul>
-        </div>
-      </div> <!-- .container -->
-    </nav> <!-- .navbar -->
+        <nav id='menu'>
+  <input type='checkbox' id='responsive-menu'><label></label>
+  <ul>
+    <li><a href='index.html'>Store</a></li>
+    <li><a class='dropdown-arrow'>S-Link</a>
+      <ul class='sub-menus'>
+        <li><a href='instructions.html'>Instructions</a></li>
+        <li><a href='reviews.html'>Reviews</a></li>
+      </ul>
+    </li>
+    <li><a class='dropdown-arrow' >Eproms</a>
+      <ul class='sub-menus'>
+        <li><a href='epromrequests.html'>Request Form</a></li>
+        <li><a href='testimonials.html'>Testimonials</a></li>
+      </ul>
+    </li>
+    <li><a href='contact.html'>Contact Us</a></li>
+  </ul>
+</nav>
 
      <!-- .page-banner -->
   </header>
