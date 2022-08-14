@@ -1,8 +1,13 @@
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
+  width: 100%;
   line-height: 1.65;
   color: #2d2f38;
+}
+
+header {
+  width:100%
 }
 
 a {
