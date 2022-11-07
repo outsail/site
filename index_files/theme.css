@@ -3,6 +3,10 @@ body {
   font-weight: 400;
   line-height: 1.65;
   color: #2d2f38;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
 }
 
 header {
@@ -21,22 +25,23 @@ a:hover {
 }
 
 #menu {
-	float: left;
+	float: Right;
 	background: #0099CC;
 	color: #FFF;
 	height: 45px;
 	padding-left: 4px;
 	border-radius: 10px;
-	width: 100%
+  overflow-x: visible;
+  overflow-y: visible;
+  width: 100%;
 }
 #menu ul, #menu li {
 	margin: 0 auto;
 	padding: 0;
 	list-style: none
-	width: 25%;
 }
 #menu ul {
-	width: 150%;
+	width: 100%;
 }
 #menu li {
 	float: left;
