@@ -1,0 +1,57 @@
+.product {
+    display: flex; /* Align items horizontally */
+    gap: 15px; /* Space between the image and text/buttons */
+    align-items: flex-start; /* Align items at the top */
+    padding: 10px;
+    border: 1px solid #ccc; /* Optional: Add a border for clarity */
+    border-radius: 5px; /* Optional: Rounded corners */
+}
+
+.imghousing img {
+    max-width: 150px; /* Set a fixed image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: Rounded corners */
+}
+
+.imghousing {
+    flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-and-buttons {
+    display: flex;
+    flex-direction: column; /* Stack text and buttons vertically */
+    gap: 10px; /* Space between title and buttons */
+}
+
+.title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.ActionButtons {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+}
+
+.ActionButton {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.ActionButton:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}

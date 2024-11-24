@@ -73,23 +73,15 @@
 		<br>
 		</div>
 	
-        <nav id='menu'>
-  <ul>
-    <li><a href='index.html'>Store</a></li>
-    <li><a class='dropdown-arrow'>S-Link</a>
-      <ul class='sub-menus'>
-        <li><a href='instructions.html'>Instructions</a></li>
-        <li><a href='reviews.html'>Reviews</a></li>
-      </ul>
-    </li>
-    <li><a class='dropdown-arrow' >Eproms</a>
-      <ul class='sub-menus'>
-        <li><a href='epromrequests.html'>Request Form</a></li>
-        <li><a href='testimonials.html'>Testimonials</a></li>
-      </ul>
-    </li>
-    <li><a href='contact.html'>Contact Us</a></li>
-  </ul>
+    <div id="NavHolder"></div>
+    <script>
+      fetch('https://outsail.github.io/site/Navmenu.html')
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById('NavHolder').innerHTML = html;
+        })
+        .catch(err => console.error('Failed to load navbar:', err));
+    </script>
 </nav>
 </nav>
 
